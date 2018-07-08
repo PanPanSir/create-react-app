@@ -54,7 +54,7 @@ module.exports = {
     // changing JS code would still trigger a refresh.
   ],
   output: {
-    // Add /* filename */ comments to generated require()s in the output.
+    // 告诉webpack在打包时添加bundle中包含的module注释信息
     pathinfo: true,
     // This does not produce a real file. It's just the virtual path that is
     // served by WebpackDevServer in development. This is the JS bundle
@@ -212,7 +212,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new webpackBundleAnalyzer.BundleAnalyzerPlugin({ openAnalyzer: true}),
+    new webpackBundleAnalyzer.BundleAnalyzerPlugin({ openAnalyzer: false }),
     // Makes some environment variables available in index.html.
     // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">

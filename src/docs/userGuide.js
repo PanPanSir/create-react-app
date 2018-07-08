@@ -1,5 +1,6 @@
 import React from 'react';
 
+// 我只是为了测试pathInfo
 const UserGuide = () => (<div>
   <a href="https://prettier.io/docs/en/options.html">
     prettier
